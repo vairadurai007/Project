@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
 import React from "react";
 import NavigationBar from "../NavigationBar";
-import Banner from "../Banner";
+// import Banner from "../Banner";
 
 export default function Home() {
-    
+
     return (
         <React.Fragment>
             <Box
@@ -26,7 +26,7 @@ export default function Home() {
                     </Box>
 
                     <Box>
-                        <Banner/>
+                        {/* <Banner/> */}
                     </Box>
                 </Box>
             </Box>
