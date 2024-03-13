@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import NavigationBar from "../NavigationBar";
+import Banner from "../Banner/banner";
 // import Banner from "../Banner";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <React.Fragment>
             <Box
                 style={{
+                    width:"100%",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
@@ -27,6 +29,7 @@ export default function Home() {
 
                     <Box>
                         {/* <Banner/> */}
+                        <Banner/>
                     </Box>
                 </Box>
             </Box>
