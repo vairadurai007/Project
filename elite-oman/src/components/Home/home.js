@@ -28,7 +28,6 @@ export default function Home() {
                     </Box>
 
                     <Box>
-                        {/* <Banner/> */}
                         <Banner/>
                     </Box>
                 </Box>
