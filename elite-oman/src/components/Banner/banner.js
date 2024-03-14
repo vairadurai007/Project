@@ -4,6 +4,7 @@ import oil from '../../assert/images/oil.jpeg'
 
 export default function Banner() {
     const theme = useTheme();
+    
     return(
         <React.Fragment>
             <Stack 
