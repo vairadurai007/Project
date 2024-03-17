@@ -5,6 +5,7 @@ import { ThemeProvider } from '@mui/material';
 import { BrowserRouter } from 'react-router-dom';
 import { EliteOman } from './EliteOman';
 import { lightTheme } from './styles';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const theme = lightTheme;
