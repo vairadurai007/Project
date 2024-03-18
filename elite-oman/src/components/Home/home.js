@@ -3,6 +3,7 @@ import React from "react";
 import NavigationBar from "../NavigationBar";
 import Banner from "../Banner/banner";
 import Company from "../Company";
+import { Contact } from "../Contact/Conatct";
 // import Banner from "../Banner";
 
 export default function Home() {
@@ -11,10 +12,10 @@ export default function Home() {
         <React.Fragment>
             <Box
             style={{
-                width:"100%",
-                height: "100%",
-                display: "flex",
-                flexDirection: "column",
+                // width:"100%",
+                // height: "100%",
+                // display: "flex",
+                // flexDirection: "column"
             }}
             >
                 <Box>
@@ -26,7 +27,10 @@ export default function Home() {
                 </Box>
 
                 <Box>
-                    {/* <Banner/> */}
+                    <Banner/>
+                </Box>
+                <Box>
+                    <Contact/>
                 </Box>
             </Box>
         </React.Fragment>
