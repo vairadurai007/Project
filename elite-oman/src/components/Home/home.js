@@ -12,11 +12,11 @@ export default function Home() {
 
     const handleScroll = (activeSource) => {
         let ref = {
-            company: companyRef,
-            contact: contactRef,
-            about: bannerRef
+            Company: companyRef,
+            Contact: contactRef,
+            About: bannerRef
         }
-        console.log(ref[activeSource]);
+        
         ref[activeSource]?.current.scrollIntoView({ behavior: "smooth" });
     };
 

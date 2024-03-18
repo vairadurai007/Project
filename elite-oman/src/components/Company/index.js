@@ -1,22 +1,27 @@
 import { Box } from "@mui/material";
 import React from "react";
-import {default as CompanyImage} from "../../assert/images/Company.jpg";
+import { default as CompanyImage } from "../../assert/images/company.png";
 
 export default function Company() {
     return (
         <React.Fragment>
-            <Box 
-                width="100%"
-                height="90vh"
-            >
-                <img 
-                    src={CompanyImage} 
-                    alt="company"
+            <Box>
+                <Box
+                    width="100%"
+                    height="100vh"
                     style={{
-                        width: "100%",
-                        height: "100%"
+                        backgroundColor: "red"
                     }}
-                />
+                >
+                    <img
+                        src={CompanyImage}
+                        alt="company"
+                        style={{
+                            width: "100%",
+                            height: "100%"  
+                        }}
+                    />
+                </Box>
             </Box>
         </React.Fragment>
     );
