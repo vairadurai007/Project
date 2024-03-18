@@ -1,36 +1,50 @@
 import { Box } from "@mui/material";
-import React from "react";
+import React, { useRef, useState } from "react";
 import NavigationBar from "../NavigationBar";
 import Banner from "../Banner/banner";
 import Company from "../Company";
 import { Contact } from "../Contact/Conatct";
-// import Banner from "../Banner";
 
 export default function Home() {
+    const bannerRef = useRef(null);
+    const contactRef = useRef(null);
+    const companyRef = useRef(null);
+
+    const handleScroll = (activeSource) => {
+        let ref = {
+            company: companyRef,
+            contact: contactRef,
+            about: bannerRef
+        }
+        console.log(ref[activeSource]);
+        ref[activeSource]?.current.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <React.Fragment>
             <Box
-            style={{
-                // width:"100%",
-                // height: "100%",
-                // display: "flex",
-                // flexDirection: "column"
-            }}
+                display="flex"
+                flexDirection="column"
+                width="100%"
+                height="100%"
+                position="relative"
             >
-                <Box>
-                    <NavigationBar />
+                <Box position="fixed" top={0} left={0} right={0} bgcolor="white">
+                    <NavigationBar
+                        handleScroll={handleScroll}
+                    />
                 </Box>
 
-                <Box>
-                    {/* <Company /> */}
+                <Box ref={companyRef}>
+                    <Company />
                 </Box>
 
-                <Box>
-                    <Banner/>
+                <Box ref={bannerRef}>
+                    <Banner />
                 </Box>
-                <Box>
-                    <Contact/>
+
+                <Box ref={contactRef}>
+                    <Contact />
                 </Box>
             </Box>
         </React.Fragment>

@@ -4,21 +4,23 @@ import { Box, Link, Stack, Typography, useTheme } from "@mui/material";
 
 const sourceList = [
     [
-        { id: 1, name: "Company", click: true },
-        { id: 2, name: "About", click: false },
-        { id: 3, name: "Equipments", click: false },
-        { id: 4, name: "Products", click: false },
-        { id: 5, name: "Service", click: false },
-        { id: 6, name: "Contact", click: false }
+        { id: 1, name: "company", click: true },
+        { id: 2, name: "banner", click: false },
+        { id: 3, name: "equipments", click: false },
+        { id: 4, name: "products", click: false },
+        { id: 5, name: "service", click: false },
+        { id: 6, name: "contact", click: false }
     ]
 ];
 
-export default function NavigationBar() {
+export default function NavigationBar(props) {
+    const {handleScroll} = props;
     const theme = useTheme();
 
     const [navbarList, setNavbarList] = useState(...sourceList);
 
     const handleNavbar = (item, index) => {
+        handleScroll(item);
         setNavbarList(items =>
             items.map(item =>
                 item.id === index + 1 ? { ...item, click: true } : { ...item, click: false }
