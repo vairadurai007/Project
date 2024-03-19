@@ -40,7 +40,7 @@ export default function NavigationBar(props) {
                 height="90px"
             >
                 <Box
-                    width="40%"
+                    width="40%" sx={{ml:6}}
                 >
                     <img
                         src={Logo}
@@ -61,7 +61,7 @@ export default function NavigationBar(props) {
                         <Link to={"/" + source.name} key={index} style={{ textDecoration: 'none' }}>
                             <Typography
                                 key={index}
-                                fontSize={16}
+                                fontSize={19}
                                 fontWeight={600}
                                 onClick={() => { handleNavbar(source.name, index) }}
                                 sx={{
@@ -70,7 +70,8 @@ export default function NavigationBar(props) {
                                     ":hover": { color: theme.palette.primary.main },
                                     color: source.click ? theme.palette.primary.main : "#0303037d" 
                                 }}
-                                style={{ fontFamily: 'Inter, sans-serif' }}
+                                // style={{ fontFamily: 'Inter, sans-serif' }}
+                                style={{fontFamily: theme.palette.fontFamily}}
                             >
                                 {source.name}
                             </Typography>

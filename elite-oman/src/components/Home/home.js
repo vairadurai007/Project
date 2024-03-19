@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import NavigationBar from "../NavigationBar";
 import Banner from "../Banner/banner";
 import Company from "../Company";

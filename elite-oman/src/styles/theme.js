@@ -1,6 +1,5 @@
 import { createTheme } from "@mui/material";
 
-
 export const lightTheme = createTheme({
     palette: {
         primary: {
@@ -11,19 +10,20 @@ export const lightTheme = createTheme({
         }
     },
     typography: {
-		// fontFamily: [
-		// 	"Lexend",
-		// 	"sans-serif",
-		// 	"-apple-system",
-		// 	"BlinkMacSystemFont",
-		// 	"Segoe UI",
-		// 	"Roboto",
-		// 	"Oxygen",
-		// 	"Ubuntu",
-		// 	"Cantarell",
-		// 	"Fira Sans",
-		// 	"Droid Sans",
-		// 	"Helvetica Neue",
-		// ].join(", "),
+		fontFamily: [
+			"Metal",
+			// "Lexend",
+			// "sans-serif",
+			// "-apple-system",
+			// "BlinkMacSystemFont",
+			// "Segoe UI",
+			// "Roboto",
+			// "Oxygen",
+			// "Ubuntu",
+			// "Cantarell",
+			// "Fira Sans",
+			// "Droid Sans",
+			// "Helvetica Neue",
+		].join(", "),
 	},
 });
