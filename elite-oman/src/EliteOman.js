@@ -1,15 +1,10 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home/home";
-import Banner from "./components/Banner/banner";
+import Company from "./components/Contact";
 
 export function EliteOman() {
     return (
         <React.Fragment>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/banner" element={<Banner/>}/>
-            </Routes>
+            <Company />
         </React.Fragment>
     );
 }
