@@ -1,5 +1,5 @@
 import React from "react";
-import Company from "./components/Contact";
+import Company from "./components/Company";
 
 export function EliteOman() {
     return (
