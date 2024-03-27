@@ -5,6 +5,7 @@ import companyPic2 from '../../assert/images/Company/companyPic2.webp';
 import companyPic3 from '../../assert/images/Company/companyPic3.webp';
 import companyPic4 from '../../assert/images/Company/companyPic4.webp';
 import { useTheme } from "@emotion/react";
+import About from "../About/About";
 
 const companyServices = [
     { image: companyPic2, title: "Drilling", link: "Go to services" },
@@ -117,6 +118,7 @@ export default function Company() {
                     ))
                 }
             </Stack>
+            <About/>
         </React.Fragment>
     );
 }
