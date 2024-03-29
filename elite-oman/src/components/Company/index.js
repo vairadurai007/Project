@@ -90,7 +90,8 @@ export default function Company() {
                             <Box
                                 width="100%"
                                 height="100%"
-                                sx={{ bgcolor: "rgba(0, 0, 0, 0.5)" }}>
+                                sx={{ bgcolor: "rgba(0, 0, 0, 0.5)" }}
+                            >
                                 <Typography
                                     sx={{
                                         lineHeight: 2,
