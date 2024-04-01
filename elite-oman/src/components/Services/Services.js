@@ -68,7 +68,7 @@ const Services = () => {
                                 sx={{
                                     background: `url(${innovationOil.inovationPic})`,
                                     backgroundSize: "100% 100%",
-                                    backgroundRepeat: "no-repeat"
+                                    backgroundRepeat: "no-repeat",
                                 }}
                             >
                                 <Box

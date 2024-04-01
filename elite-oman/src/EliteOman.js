@@ -6,6 +6,7 @@ import Contact from "./components/Contact/Contact";
 import Services from './components/Services/Services';
 import Footer from "./components/Footer/Footer";
 import Productions from "./components/Productions/Productions";
+import Benifits from "./components/Benifits/Benifits";
 
 export function EliteOman() {
     return (
@@ -16,6 +17,10 @@ export function EliteOman() {
 
             <Box>
                 <About />
+            </Box>
+
+            <Box>
+                <Benifits />
             </Box>
 
             <Box>

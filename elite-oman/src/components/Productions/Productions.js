@@ -11,9 +11,9 @@ const Productions = () => {
     const theme = useTheme();
 
     const productionList = [
-        { productionImg: productionImg, title: "Exploration & Development", link: "Learn More +", text: "From exploration and production to transportation and refining, we offer a wide range of products." },
-        { productionImg: productionImg2, title: "Transportation & Distribution", link: "Learn More +", text: " From exploration and production to transportation and refining, we offer a wide range of products." },
-        { productionImg: productionImg3, title: "Research & Innovation", link: "Learn More +", text: "From exploration and production to transportation and refining, we offer a wide range of products." },
+        { productionImg: productionImg, date: "February 18 ,2024", title: "Exploration & Development", link: "Learn More +", text: "From exploration and production to transportation and refining, we offer a wide range of products." },
+        { productionImg: productionImg2, date: "February 18 ,2024", title: "Transportation & Distribution", link: "Learn More +", text: " From exploration and production to transportation and refining, we offer a wide range of products." },
+        { productionImg: productionImg3, date: "February 18 ,2024", title: "Research & Innovation", link: "Learn More +", text: "From exploration and production to transportation and refining, we offer a wide range of products." },
     ];
 
     return (
@@ -51,62 +51,99 @@ const Productions = () => {
                     </Box>
                 </Box>
 
-                <Box width={"100%"} display={'flex'} justifyContent={"center"}>
-                    <Stack direction="row" justifyContent="space-evenly" width="90%" pb={4} >
+                <Box
+                    width={"100%"}
+                    display={'flex'}
+                    justifyContent={"center"}
+                >
+                    <Stack
+                        direction="row"
+                        justifyContent="space-evenly"
+                        width="90%"
+                        pb={4}
+                    >
                         {
                             productionList.map((production, index) => (
                                 <Box
-                                    key={index}
                                     width="30%"
-                                    height={300}
+                                    height={400}
                                     sx={{
-                                        bgcolor: theme.palette.primary.main,
-                                        color: theme.palette.secondary.main,
-                                        p: 4,
-                                        background: `url(${production.productionImg})`,
-                                        backgroundRepeat: "no-repeat",
-                                        backgroundSize: "100% 100%"
-                                    }
-                                    }>
-                                    <Typography
+                                        overflow: "hidden"
+                                    }}
+                                >
+                                    <Box
+                                        key={index}
+                                        width="100%"
+                                        height="100%"
                                         sx={{
-                                            fontWeight: 700,
-                                            fontSize: "25px"
-                                        }}
-                                    >
-                                        {production.title}
-                                    </Typography>
-
-                                    <Typography
-                                        sx={{
-                                            lineHeight: 1.5
-                                        }}
-                                    >
-                                        {production.text}
-                                    </Typography>
-
-                                    <Link to=""
-                                        sx={{
-                                            color: "#fff",
-                                            cursor: "pointer",
-                                        }}
-                                    >
-                                        <Typography
-                                            variant='span'
+                                            bgcolor: theme.palette.primary.main,
+                                            color: theme.palette.secondary.main,
+                                            background: `url(${production.productionImg})`,
+                                            backgroundRepeat: "no-repeat",
+                                            backgroundSize: "100% 100%",
+                                            cursor: 'pointer', ":hover": { transform: "scale(1.1)", transition: 'all .2s ease-in-out' }
+                                        }
+                                        }>
+                                        <Box
+                                            width="100%"
+                                            height="100%"
+                                            p={4}
+                                            bgcolor="rgba(0,0,0,0.5)"
                                             sx={{
-                                                display: 'inline-block',
-                                                fontSize: "16px",
-                                                pt: 4,
-                                                fontWeight: 500,
-                                                '&:hover': {
-                                                    textDecoration: "underline",
-                                                }
-
+                                                display: "flex",
+                                                flexDirection: "column",
+                                                justifyContent: "end",
                                             }}
                                         >
-                                            {production.link}
-                                        </Typography>
-                                    </Link>
+                                            <Typography
+                                                sx={{
+                                                    fontWeight: 700,
+                                                    fontSize: "16px"
+                                                }}
+                                            >
+                                                {production.date}
+                                            </Typography>
+                                            <Typography
+                                                sx={{
+                                                    fontWeight: 700,
+                                                    fontSize: "25px"
+                                                }}
+                                            >
+                                                {production.title}
+                                            </Typography>
+
+                                            <Typography
+                                                sx={{
+                                                    lineHeight: 1.5
+                                                }}
+                                            >
+                                                {production.text}
+                                            </Typography>
+
+                                            <Link to=""
+                                                sx={{
+                                                    cursor: "pointer",
+                                                }}
+                                            >
+                                                <Typography
+                                                    variant='span'
+                                                    sx={{
+                                                        display: 'inline-block',
+                                                        fontSize: "16px",
+                                                        pt: 4,
+                                                        color: "#fff",
+                                                        fontWeight: 500,
+                                                        '&:hover': {
+                                                            textDecoration: "underline"
+                                                        }
+
+                                                    }}
+                                                >
+                                                    {production.link}
+                                                </Typography>
+                                            </Link>
+                                        </Box>
+                                    </Box>
                                 </Box>
                             ))
                         }
