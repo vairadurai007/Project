@@ -54,9 +54,9 @@ const Services = () => {
                     INNOVATING FOR A SUSTAINABLE TOMORROW IN OIL & GAS
                 </Typography>
                 <Stack
-                    direction={'row'}
-                    flexWrap={'wrap'}
-                    justifyContent={'space-evenly'}
+                    direction='row'
+                    flexWrap='wrap'
+                    justifyContent='space-evenly'
                 >
                     {
                         innovationOilGas.map((innovationOil, index) => (
@@ -74,11 +74,14 @@ const Services = () => {
                                 <Box
                                     width="100%"
                                     height="100%"
-                                    sx={{ bgcolor: "rgba(0, 0, 0, 0.5)" }}
+                                    sx={{ bgcolor: "rgba(0, 0, 0, 0.5)"}}
                                 >
                                     <Stack
-                                        pl={4}
-                                        pt={30}
+                                        p={4}
+                                        width="100%"
+                                        height="100%"
+                                        direction="column"
+                                        justifyContent="end"
                                     >
                                         <Typography
 
@@ -88,7 +91,8 @@ const Services = () => {
                                         <Typography
                                             sx={{
                                                 fontWeight: 700,
-                                                fontSize: "20px"
+                                                fontSize: "20px",
+                                                py:1
                                             }}
                                         >
                                             {innovationOil.title}

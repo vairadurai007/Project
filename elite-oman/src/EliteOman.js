@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 import Contact from "./components/Contact/Contact";
 import Services from './components/Services/Services';
 import Footer from "./components/Footer/Footer";
+import Productions from "./components/Productions/Productions";
 
 export function EliteOman() {
     return (
@@ -22,11 +23,15 @@ export function EliteOman() {
             </Box>
 
             <Box>
+                <Productions />
+            </Box>
+
+            <Box>
                 <Contact />
             </Box>
 
             <Box>
-                <Footer/>
+                <Footer />
             </Box>
         </React.Fragment>
     );
