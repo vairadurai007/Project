@@ -7,6 +7,7 @@ import Services from './components/Services/Services';
 import Footer from "./components/Footer/Footer";
 import Productions from "./components/Productions/Productions";
 import Benifits from "./components/Benifits/Benifits";
+import ServiceWeProvite from "./components/ServiceWeProvide/ServiceWeProvite";
 
 export function EliteOman() {
     return (
@@ -29,6 +30,10 @@ export function EliteOman() {
 
             <Box>
                 <Productions />
+            </Box>
+
+            <Box>
+                <ServiceWeProvite />
             </Box>
 
             <Box>

@@ -40,9 +40,9 @@ const Footer = () => {
     ]
 
     const contactDetails = [
-        { logo: <EmailIcon sx={{ color: theme.palette.primary.main }} />, lable: "onlineedu@examplemail.com" },
-        { logo: <PhoneIcon sx={{ color: theme.palette.primary.main }} />, lable: "(405) 555-0128" },
-        { logo: <LocationOnIcon sx={{ color: theme.palette.primary.main }} />, lable: "82706 Keneth Plains, New Jackson, GA 91098" },
+        { logo: <EmailIcon sx={{ color: theme.palette.primary.main }} />, lable: "elitesalesoman@gmail.com" },
+        { logo: <PhoneIcon sx={{ color: theme.palette.primary.main }} />, lable: "+968-92953431" },
+        { logo: <LocationOnIcon sx={{ color: theme.palette.primary.main }} />, lable: "Siyon Michael Raja D, Elite Technical Distinguished Company Barka, Sultanate of Oman" },
     ]
 
     return (
@@ -69,6 +69,7 @@ const Footer = () => {
                         <img
                             src={Logo}
                             width={100}
+                            alt='logo'
                         />
                         <Typography
                             pb={5}
@@ -173,7 +174,7 @@ const Footer = () => {
                             variant="contained"
                             sx={{
                                 bgcolor: theme.palette.primary.main,
-                                color: theme.palette.secondary.main,
+                                color:"#fff",
                                 px: 4,
                                 py: 1,
                                 mt: 2,

@@ -1,6 +1,7 @@
 import { Stack, Box, Typography, Link } from '@mui/material';
 import React from 'react';
 import aboutPic from '../../assert/images/Company/aboutPic.webp';
+import fixedbackground from '../../assert/images/Company/servicefixedbackground.webp'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import { useTheme } from '@emotion/react';
 
@@ -188,6 +189,21 @@ const About = () => {
                         ))
                     }
                 </Stack>
+            </Box>
+
+            <Box
+                width="100%"
+                height="250px"
+                sx={{
+                    background: `url(${fixedbackground})`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: "100% 100%",
+                    color: theme.palette.secondary.main,
+                    backgroundAttachment:"fixed",
+                    my:6
+                }}
+            >
+
             </Box>
         </React.Fragment>
     )

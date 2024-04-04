@@ -74,7 +74,9 @@ const Services = () => {
                                 <Box
                                     width="100%"
                                     height="100%"
-                                    sx={{ bgcolor: "rgba(0, 0, 0, 0.5)"}}
+                                    sx={{
+                                        bgcolor: "rgba(0, 0, 0, 0.5)",
+                                    }}
                                 >
                                     <Stack
                                         p={4}
@@ -92,7 +94,7 @@ const Services = () => {
                                             sx={{
                                                 fontWeight: 700,
                                                 fontSize: "20px",
-                                                py:1
+                                                py: 1
                                             }}
                                         >
                                             {innovationOil.title}
